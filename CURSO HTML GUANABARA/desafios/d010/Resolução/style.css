@@ -1,0 +1,74 @@
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+
+header {
+
+    max-width: 800px;
+    min-width: 400px;
+    background-color: green;
+    text-align: center;
+    margin: auto;
+    
+
+}
+nav {
+    
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+main {
+    
+    max-width: 800px;
+    min-width: 400px;
+    text-align: center;
+    margin: auto;
+    text-align: justify;
+    background-color: var(--cor1);
+    
+    
+}
+div.video{
+    margin: auto;
+    max-width: 800px;
+    min-width: 400px;
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    
+    padding-bottom: 59%;
+}
+div.video > inframe {
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+article h1{
+    text-decoration-color: var(--cor5)
+
+
+}
