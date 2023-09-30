@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* PRIMEIRO PASSO PARA DEIXAR O TÍTULO FIXO NA ROLAGEM */
         }
 
         td.num {
@@ -35,11 +36,17 @@
             color: white;
         }
 
-        tbody > tr:nth-child(odd) { /* 2n-1 */
+        thead > tr > th { /*COMANDO PARA FIXAR ESTA LINHA NA BARRA DE ROLAGEM */
+            position: sticky;
+            top: 0; /* BOM USAR TOP -1 PRO POSICIONAMENTO FICAR PERFEITO */
+            background-color: gray; /*BACKGROUND-COLOR TEM QUE SER ADICIONADO, SENÃO DESCEM NA ROLAGEM APENAS AS LETRAS */
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 - EFEITO ZEBRADO NAS LINHAS ÍMPARES */
             background-color: white; 
         }
 
-        tbody > tr:nth-child(even) { /* 2n */
+        tbody > tr:nth-child(even) { /* 2n - EFEITO ZEBRADO NAS LINHAS PARES*/
             background-color: lightgray;
         }
         
