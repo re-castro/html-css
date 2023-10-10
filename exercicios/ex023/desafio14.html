@@ -16,17 +16,32 @@
             padding: 10px;
         }
 
+        .realce {
+            background-color: lightgray;
+            color: white;
+            font-weight: bold;
+            
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
     </style>
 </head>
 <body>
     <table>
-        <tr>
+        <tr class="realce">
             <th rowspan="2">Área</th>
             <th rowspan="2">Disciplinas</th>
             <th colspan="2" scope="colgroup">Notas</th>
             <th rowspan="2">Média</th>
         </tr>
-        <tr>
+        <tr class="realce">
             <th scope="col">Nota 1</th>
             <th scope="col">Nota 2</th>
         </tr>
@@ -56,8 +71,8 @@
             <td>0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Exatas</th>
-            <td>0.0</td>
+            <th colspan="4" class="realce esquerda" >Média de Exatas</th>
+            <td class="realce">0.0</td>
         </tr>
         <tr>
             <th rowspan="2">Humanas</th>
@@ -73,8 +88,8 @@
             <td>0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Humanas</th>
-            <td>0.0</td>
+            <th colspan="4" class="realce esquerda">Média de Humanas</th>
+            <td class="realce">0.0</td>
         </tr>
         
 
