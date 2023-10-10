@@ -21,13 +21,32 @@
             padding: 10px;
         }
 
+        col.cnome {
+            background-color: lightgray;
+        }
+
+        col.cgrupo {
+            background-color: lightgoldenrodyellow;
+        }
+
+        col.cprof {
+            background-color: lightblue;
+        }
+
         
     </style>
 </head>
 <body>
-    <h1>Exercício de Tabela</h1>
+    <h1>Agrupando Colunas com Colgroup</h1>
 
     <table>
+        <!--CRIO O COLGROUP PARA ATACAR AS COLUNAS E CRIO UMA CLASS PARA CADA UMA DELAS-->
+        <!--NÃO PRECISO IR EM CADA TR E COLOCAR A CLASS... BASTA CRIAR EM COLGROUP E O PROPRIO HTML RELACIONA AS COLUNAS POR ORDEM-->
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2"><!--PARA SEXO E IDADE-->
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
