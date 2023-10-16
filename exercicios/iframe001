@@ -5,16 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 350px;
+            height: 350px;
+            /*O CSS VAI SEMPRE TER PREFERÊNCIA EM RELAÇÃO AO HTML*/
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um inframe</h1>
     <p>
         Acessando o site do 
-        <iframe src="https://cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://cursoemvideo.com" frameborder="0" height="500px">
+            <a href="https://cursoemvideo.com" target="_blank"> Curso em Vídeo</a>
+            <!--ENTRA O IFRAME E /IFRAME, COLOQUEI UM LINK DIRETO DO MESMO SITE PORQUE O CELULAR PODE NÃO TER COMPATIBILIDADE COM O IFRAME-->
+        </iframe>
         para aprender a programar
     </p>
+    <!--
+        <p>
+        O repositório do Guanabara
+         <iframe src="http://google.com" frameborder="0"></iframe>
+          também é muito legal
+    </p>
+    --> <!--O SITE DO GOOGLE NÃO FUNCIONA, TEM PROTEÇÃO E NÃO APARECE EM IFRAMES-->
     <p>
-        O site do <iframe src="http://www.google.com" frameborder="0"></iframe> também é muito legal
-    </p> <!--O SITE DO GOOGLE NÃO FUNCIONA, TEM PROTEÇÃO E NÃO APARECE EM IFRAMES-->
+        O site do professor Guanabara <iframe src="http://gustavoguanabara.github.io" frameborder="0" height="500px" width="500px">
+        <a href="http://gustavoguanabara.github.io" target="_blank">Repositório do Guanabara</a>
+        </iframe>
+        também é excelente.
+    </p>
+
 </body>
 </html>
