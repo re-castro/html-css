@@ -12,13 +12,39 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form> <!--COMANDO PARA FORMULÁRIO-->
-        <p>Nome: <input type="text" name="nome" id="nome"></p> <!--INPUT TEXT-->
+    <form action="cadastro.php" autocomplete="off"> 
+        <!--ACTION FUNCIONA PARA ENVIAR O FORMULÁRIO PARA ALGUM LUGAR-->
+        <!--AUTOCOMPLETE OFF SERVE PARA O FORMULÁRIO NÃO SUGERIR NOMES QUANDO FOR CLICADO-->
 
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p><!--INPUT TEXT-->
-        
-        <p><input type="submit" value="Enviar"></p> <!--COMANDO PARA BOTÃO DE ENVIO-->
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p> 
+        <!--INPUT TEXT-->
+        <!--PRECISO DO LABEL PRA FAZER A RELAÇÃO ENTRE O OBJETO DO FORMULÁRIO E A ETIQUETA DELE (FOR E ID)-->
+
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <!--INPUT TEXT-->
+        <!--PRECISO DO LABEL PRA FAZER A RELAÇÃO ENTRE O OBJETO DO FORMULÁRIO E A ETIQUETA DELE (FOR E ID)-->
+
+        <p><input type="submit" value="Enviar"></p>
+         <!--COMANDO PARA BOTÃO DE ENVIO-->
     </form>
     
 </body>
 </html>
+
+<!--
+    Existem dois métodos (method) para envio de formulários:
+    GET e POST
+    GET - Método padrão em que os dados aparecem na url
+    POST - Os dados não aparecem na url
+    Para o HTML5 não faz diferença
+    Para criptografar esses dados, é necessário o https
+    POST tem uma certa segurança por não mostrar os dados na url, mas mesmo
+    assim é possível ter acesso a esses dados ao inspecionar.
+    
+    GET: 
+    - Até 3.000 Bytes (ou 3.000 letras);
+    - Não recomendado para arquivos (ou fotos);
+    - Não recomendado para dados sensíveis (senhas, cartões, etc...)
+-->
